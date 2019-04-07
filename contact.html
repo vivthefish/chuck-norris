@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chuck Norris Action Jeans | Century</title>
+        <link href="styles/style.css" rel="stylesheet" media="screen" />
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <header>
+            <a id="homeButton" href="index.html" title="Go to Home Page"><h1>Chuck Norris <span>Action Jeans</span></h1></a>
+            <nav class="global">
+                <ul>
+                    <li><a href="info.html" title="Learn more about this product">More Info</a></li>
+                    <li><a href="reviews.html" title="View Customer Reviews">Reviews</a></li>
+                    <li><a href="order.html" title="Click Here to Order now">Order Now</a></li>
+                    <li><a class="current" href="contact.html" title="Get Customer Support">Contact</a></li>
+                    <li><a href="century.html" title="Learn more about Century LLC">Century LLC</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img id="stand" src="images/chuck-norris-stand-1.png" alt="Chuck Norris" />
+            <div class="content">
+                <h2 class="contact">Contact Customer Support</h2>
+                <div class="copy">
+                    <p>If you require any assistance or have any questions regarding your order, please contact us and we will do <em>everything</em> we can to help!</p>
+                    <p>Please fill out our contact form below, or feel free to call our toll-free number.</p>
+                    <address>Century Martial Art Supply, LLC.<br>1705 National Blvd.,<br>Oklahoma City, OK<br>73110<br><span class="phone">1-800-626-2787</span></address>
+                </div>
+
+                <!-- Contact Form -->
+                <h3>Contact Form</h3>
+                <form id="contact-form" method="get" action="script/process-contact.php">
+                    <input type="hidden" name="form_sent" value="1" />
+                    <fieldset id="contact-info">
+                        <legend>Contact Info</legend>
+                        <div>
+                            <label for="name">Full Name:</label>
+                            <input type="text" name="name" id="name" required size="25" maxlength="50" placeholder="Type your full name here" /><br>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" />
+                        </div>
+                    </fieldset>
+                    <fieldset id="contact-text">
+                        <legend>Tell Us More</legend>
+                        <div>
+                            <label for="contact-textbox">Tell us what the problem is:</label>
+                            <textarea id="contact-textbox" name="contact-textbox" maxlength="200" placeholder="Type here." cols="25" rows="10"></textarea>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p><img src="images/century-sm.png" alt="Century Athletic Logo" height=63 width=100 /><small><a href="https://www.centurymartialarts.com/" title="Go to the Century Martial Arts Official Site">Century Martial Arts Supply, LLC.</a> All rights reserved. All audio, visual and textual content on this site are protected by trademark rights, copyrights and other rights owned by Century LLC’s licensors, licensees, suppliers and accounts. Use of this site signifies your agreement to the Terms and Conditions of Use.<br>Site created by Vivian Harvey for COMP 1002, Fall 2017.</small></p>
+        </footer>
+    </body>
+</html>

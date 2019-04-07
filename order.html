@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chuck Norris Action Jeans | Century</title>
+        <link href="styles/style.css" rel="stylesheet" media="screen" />
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <header>
+            <a id="homeButton" href="index.html" title="Go to Home Page"><h1>Chuck Norris <span>Action Jeans</span></h1></a>
+            <nav class="global">
+                <ul>
+                    <li><a href="info.html" title="Learn more about this product">More Info</a></li>
+                    <li><a href="reviews.html" title="View Customer Reviews">Reviews</a></li>
+                    <li><a class="current" href="order.html" title="Click Here to Order now">Order Now</a></li>
+                    <li><a href="contact.html" title="Get Customer Support">Contact</a></li>
+                    <li><a href="century.html" title="Learn more about Century LLC">Century LLC</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img id="stand" src="images/chuck-norris-stand-1.png" alt="Chuck Norris" />
+            <div class="content">
+                <h2 class="order">Order Now</h2>
+                <form id="edit_order_info" method="get" action="script/process-form.php">
+                    <input type="hidden" name="form_sent" value="1" />
+                    <fieldset id="quantityAndSizing">
+                        <legend>Quantity and Sizing</legend>
+                        <div>
+                            <label for="number">Quantity:</label>
+                            <input type="number" id="number" name="quantity" min="1" max="30" required="required"/>
+                        </div>
+                        <div>
+                            <label for="size">Please Select Size:</label>
+                            <select id="size" name="size" required="required" >
+                                <option value="">choose…</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                            </select>
+                            <h4 id="get-sizing-chart">Sizing Chart</h4>
+                            <div class="modal" id="sizing-chart">
+                                <span class="close">&times;</span>
+                                <div class="modal-content">
+                                    <h4>Men's Jean Sizing Chart</h4>
+                                    <table>
+                                        <tr>
+                                            <th>US Size</th>
+                                            <th>Waist (inches)</th>
+                                            <th>Seat (inches)</th>
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>26 1/2 -27</td>
+                                            <td>32 1/2 - 33</td>
+                                        </tr>
+                                        <tr>
+                                            <td>27</td>
+                                            <td>27 1/2 - 28</td>
+                                            <td>33 1/2 - 34</td>
+                                        </tr>
+                                       <tr>
+                                            <td>28</td>
+                                            <td>28 1/2 - 29</td>
+                                            <td>34 1/2 - 35</td>
+                                        </tr>
+                                        <tr>
+                                            <td>29</td>
+                                            <td>29 1/2 - 30</td>
+                                            <td>35 1/2 - 36</td>
+                                        </tr>
+                                        <tr>
+                                            <td>30</td>
+                                            <td>30 1/2 - 31</td>
+                                            <td>36 1/2 - 37</td>
+                                        </tr>
+                                        <tr>
+                                            <td>31</td>
+                                            <td>31 1/2 - 32</td>
+                                            <td>37 1/2 - 38</td>
+                                        </tr>
+                                        <tr>
+                                            <td>32</td>
+                                            <td>32 1/2 - 33</td>
+                                            <td>38 1/2 - 39</td>
+                                        </tr>
+                                        <tr>
+                                            <td>33</td>
+                                            <td>33 1/2 - 34</td>
+                                            <td>39 1/2 - 40</td>
+                                        </tr>
+                                        <tr>
+                                            <td>34</td>
+                                            <td>34 1/2 - 35</td>
+                                            <td>40 1/2 - 41</td>
+                                        </tr>
+                                        <tr>
+                                            <td>35</td>
+                                            <td>35 1/2 - 36</td>
+                                            <td>41 1/2 - 42</td>
+                                        </tr>
+                                        <tr>
+                                            <td>36</td>
+                                            <td>36 1/2 - 37</td>
+                                            <td>42 1/2 - 43</td>
+                                        </tr>
+                                        <tr>
+                                            <td>37</td>
+                                            <td>37 1/2 - 38</td>
+                                            <td>43 1/2 - 44</td>
+                                        </tr>
+                                        <tr>
+                                            <td>38</td>
+                                            <td>38 1/2 - 39</td>
+                                            <td>44 1/2 - 45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>39</td>
+                                            <td>39 1/2 - 40</td>
+                                            <td>45 1/2 - 46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>40</td>
+                                            <td>40 1/2 - 41</td>
+                                            <td>46 1/2 - 47</td>
+                                        </tr>    
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset id="personalInfo">
+                        <legend>Personal Information</legend>
+                        <div>
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" required size="25" maxlength="50" placeholder="Type first name here" /><br>
+                        </div>
+                        <div>
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" required size="25" maxlength="50" placeholder="Type last name here" /><br>
+                        </div>
+                        <div>
+                            <label for="address">Address Line 1</label>
+                            <input type="text" name="address" id="address" required size="25" maxlength="50" /><br>
+                        </div>
+                        <div>
+                            <label for="address2">Address Line 2</label>
+                            <input type="text" name="address2" id="address2" size="25" maxlength="50" />
+                        </div>
+                        <div>
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city" required size="20" maxlength="50" />
+                        </div>
+                        <div>
+                            <label for="postal-code">Postal Code</label>
+                            <input type="text" name="postal-code" id="postal-code" required size="7" maxlength="7" />
+                        </div>
+                        <div>
+                            <label for="province">Province</label>
+                            <select id="province" name="province">
+                                    <option value="choose">choose…</option>
+                                    <option value="AB">Alberta</option>
+                                    <option value="BC">British Colombia</option>
+                                    <option value="ON">Ontario</option>
+                                    <option value="MB">Manitoba</option>
+                                    <option value="NB">New Brunswick</option>
+                                    <option value="NL">Newfoundland</option>
+                                    <option value="NT">Northwest Territories</option>
+                                    <option value="NS">Nova Scotia</option>
+                                    <option value="NV">Nunavut</option>
+                                    <option value="PE">Prince Edward Island</option>
+                                    <option value="PQ">Québec</option>
+                                    <option value="SK">Saskatchewan</option>
+                                    <option value="YK">Yukon Territory</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="phone">Phone</label>
+                            <input id="phone" type="tel" name="phone" />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" />
+                        </div>
+                    </fieldset>
+                    <fieldset id="paymentInfo">
+                        <legend>Payment Information</legend>
+                            <input type="radio" name="cctype" id="amex" value="amex" />
+                            <label class="payment" for="amex"><img src="images/amex_logo.gif" alt="American Express" /> American Express</label>
+                            <input type="radio" name="cctype" id="mc" value="mc" />
+                            <label class="payment" for="mc"><img src="images/mc_logo.gif" alt="MasterCard" /> MasterCard</label>
+                            <input type="radio" name="cctype" id="visa" value="visa" />
+                            <label class="payment" for="visa"><img src="images/visa_logo.gif" alt="VISA" /> VISA</label>
+                        <div>
+                            <label for="ccnumber">Credit Card Number</label>
+                            <input id="ccnumber" type="text" name="ccnumber" value="" />
+                        </div>
+                        <div>
+                            <label for="ccexpireyear">Expiration Year</label>
+                            <select id="ccexpireyear" name="ccexpireyear">
+                                <option>choose...</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="ccexpiremonth">Expiration Month</label>
+                            <select name="ccexpiremonth" id="ccexpiremonth">
+                                <option value="choose">choose…</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>                                    <option value="12">12</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit</button>  
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p><img src="images/century-sm.png" alt="Century Athletic Logo" height=63 width=100 /><small><a href="https://www.centurymartialarts.com/" title="Go to the Century Martial Arts Official Site">Century Martial Arts Supply, LLC.</a> All rights reserved. All audio, visual and textual content on this site are protected by trademark rights, copyrights and other rights owned by Century LLC’s licensors, licensees, suppliers and accounts. Use of this site signifies your agreement to the Terms and Conditions of Use.<br>Site created by Vivian Harvey for COMP 1002, Fall 2017.</small></p>
+        </footer>
+        <script src="script/script.js"></script>
+    </body>
+</html>

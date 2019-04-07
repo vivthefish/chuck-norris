@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* Embedded fonts from Google fonts */
+/* latin */
+@font-face {
+    font-family: 'Sedgwick Ave';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Sedgwick Ave Regular'), local('SedgwickAve-Regular'), url(https://fonts.gstatic.com/s/sedgwickave/v3/pbgmsWX_2A5V-qqzaczoE-gdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+  }
+  /* latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v16/Zd2E9abXLFGSr9G3YK2MsDAdhzWOYhqHvOZMRGaEyPo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+  }
+  /* latin-ext */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v16/Zd2E9abXLFGSr9G3YK2MsD86pq2NkPzVgw_9lpT6RGI.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("../images/jean.jpg");
+    background-position: 100px;
+    position: relative;
+    margin: 50px auto;
+}
+
+/* Header */
+header {
+    background-color: #EEE;
+    width: 760px;
+    margin: 0 auto;
+    padding: 1% 1% 0 1%;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+h1{
+    font-family: "Sedgwick Ave", "Comic Sans", serif;
+    color: #c06f52;
+    text-align: center;
+    font-size: 3.9em;
+    text-align: center;
+}
+h1 span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1em;
+    color: #005ca6;
+    font-style: oblique; 
+    text-transform: uppercase;
+}
+
+/* Navigation */
+nav{
+	width: 760px;
+    margin: 0 auto;
+}
+nav ul{
+	height: 44px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+nav li{
+    height: 44px;
+    width: 152px;
+	padding: 0;
+	margin: 0;
+    float: left;
+    text-align: center;
+}
+nav li a{
+	height: 20px;
+	display: block;
+    padding: 10px 15px;
+    background-color: #c9d1e8;
+    border: 2px solid #c9d1e8;
+    color: #005ca6;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+nav li a:hover{
+	color: #000;
+    background-color: #EEE;
+    border: 2px solid #EEE;
+}
+nav li a:active{
+	background-color: #EEE;
+    color: #c06f52;
+}
+.current {
+    background-color: #EEE;
+    border: 2px solid #c9d1e8;
+}
+
+/* Main area */
+main {
+    background-color: #EEE;
+    width: 760px;
+    margin: 0 auto;
+    padding: 1%;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    position: relative;
+    min-height: 610px;
+    /* overflow: auto; */
+}
+
+/* lefthand images */
+#kick {
+    position: absolute;
+    left: -120px;
+    top: -20px;
+    z-index: 10;
+}
+#stand {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+/* Quote speech bubbles */
+p q.home {
+    background-image: url("../images/quote-bubble.png");
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    background-position-x: 12px;
+    padding: 70px;
+    position: absolute;
+    left: -10px;
+    top: -15px;
+    font-family: "Sedgwick Ave", "Comic Sans", serif;
+    font-size: 1.1em;
+}
+p q.info {
+    background-image: url("../images/speech-bubble-1.png");
+    background-repeat: no-repeat;
+    background-position-y: -5px;
+    background-position-x: 10px;
+    padding: 40px 70px 70px 70px;
+    position: absolute;
+    left: 130px;
+    top: 5px;
+    font-family: "Sedgwick Ave", "Comic Sans", serif;
+    font-size: 1.1em;
+}
+
+/* Other Images */
+.img-century {
+    display: block;
+    margin: 10px auto;
+}
+#info-crotch {
+    float: left;
+    padding: 15px;
+}
+#info-butt {
+    float: right;
+    clear: both;
+    padding: 15px;
+}
+
+/* Content areas */
+.content {
+    width: 500px;
+    height: 595px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5%;
+    overflow: scroll;
+}
+h2 {
+    font-family: "Sedgwick Ave", "Comic Sans", serif;
+    font-size: 2em;
+    text-align: center;
+}
+h2.home {
+    padding: 20px 20px 30px 120px;
+}
+h2.info {
+    margin-top: 100px;
+}
+.promotion {
+    float: right;
+    font-size: 1.5em;
+    text-align: center;
+    margin-right: 20%;
+    padding: 1%;
+    color: #005ca6;
+    border: dotted 5px #005ca6;
+}
+.price {
+    display: block;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#cnlogo {
+    padding: 0 20px 20px 20px;
+}
+.copy {
+    padding: 5px 20px 20px 20px;
+    font-size: 1.1em;
+    text-indent: 20px;
+}
+p {
+    padding: 5px;
+}
+p.second {
+    clear: left;
+}
+h3 {
+    padding: 10px;
+}
+.guarantee {
+    padding: 5px 20px 20px 20px;
+    margin: 10px 50px;
+    font-size: 1.1em;
+    text-indent: 40px;
+    background-color: #c9d1e8;
+    clear: both;
+}
+.review {
+    padding: 10px;
+}
+time {
+    font-size: 0.9em;
+    color: rgb(134, 134, 134);
+}
+address {
+    font-size: 1.1em;
+    padding: 5px;
+    text-align: center;
+}
+.phone {
+    font-size: 1.5em;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+}
+th {
+    background-color: #005ca6;
+    color: white;
+}
+table, th, td {
+    text-align: center;
+}
+th, td {
+    padding: 8px;
+}
+tr:nth-child(even) {background-color: #e2e2e2;}
+
+/* Form */
+fieldset {
+    border: none;
+    margin: 1% 0;
+    padding: 5px;
+    background-color:#e2e2e2;
+}
+legend {
+	text-transform: uppercase;
+    color: #005ca6;
+    font-style: bold;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+fieldset div {
+	margin: 1%;
+}
+div label {
+	display: block;
+	width: 200px;
+	float: left;
+	text-align: right;
+	padding-right: 1em;
+}
+div label.payment {
+    display: inline;
+    float: none;
+}
+input[required] {
+
+}
+label.error {
+	color: red;
+	float: right;
+}
+label img {
+	vertical-align: middle;
+}
+button {
+    background-color:#005ca6;
+    border-radius: 15px;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.img-process {
+    padding: 20px;
+}
+
+/* Modal */
+ .modal {
+    margin: 0;
+    display: none;
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+#get-sizing-chart{
+    cursor: pointer;
+    display: inline;
+    padding: 5px;
+    color:#005ca6;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 250px;
+}
+/* Modal Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+/* Footer */
+footer {
+    background-color: #EEE;
+    width: 760px;
+    margin: 0 auto;
+    padding: 2% 1%;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    line-height: 11px;
+    clear: both;
+}
+footer p img{
+	float: left;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+footer p {
+    margin-left: 100px;
+    padding: 0 6% 2% 6%;
+}

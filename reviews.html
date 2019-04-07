@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chuck Norris Action Jeans | Century</title>
+        <link href="styles/style.css" rel="stylesheet" media="screen" />
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <header>
+            <a id="homeButton" href="index.html" title="Go to Home Page"><h1>Chuck Norris <span>Action Jeans</span></h1></a>
+            <nav class="global">
+                <ul>
+                    <li><a href="info.html" title="Learn more about this product">More Info</a></li>
+                    <li><a class="current" href="reviews.html" title="View Customer Reviews">Reviews</a></li>
+                    <li><a href="order.html" title="Click Here to Order now">Order Now</a></li>
+                    <li><a href="contact.html" title="Get Customer Support">Contact</a></li>
+                    <li><a href="century.html" title="Learn more about Century LLC">Century LLC</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img id="stand" src="images/chuck-norris-stand-1.png" alt="Chuck Norris" />
+            <div class="content">
+
+                <!-- Current reviews -->
+                <h2 class="reviews">Customer Reviews</h2>
+                <div class="review">
+                    <h4>Jeff Hampton</h4>
+                    <img class="stars" src="images/4stars.png" alt="4 Stars" height=21 width=88 /><br>
+                    <time datetime="2016-08-06">August 6, 2016</time>
+                    <p>These are great well made pants. The fit for me is that the waist was a little tight compared to other pants and the length was a little too long so order accordingly. The return process is painless though if you don't. Thanks Chuck Norris!</p>
+                </div>
+                <div class="review">
+                    <h4>John Zero</h4>
+                    <img class="stars" src="images/5stars.png" alt="4 Stars" height=21 width=88 /><br>
+                    <time datetime="2016-04-18">May 18, 2016</time>
+                    <p>Timeless, high quality product. My own shape has changed over the years but the fit of these jeans has been great at every point. A classic that must be part of every wardrobe. I can do my entire karate routine without ripping a seam.</p>
+                </div>
+                <div class="review">
+                    <h4>Raymond Staats</h4>
+                    <img class="stars" src="images/5stars.png" alt="4 Stars" height=21 width=88 /><br>
+                    <time datetime="2015-11-22">November 22, 2015</time>
+                    <p>These are the only jeans I buy. They always fit as expected. The stitching is nice and sturdy. The material thickness is just right. And the classic fit, look, and feel is impossible to beat. And, if I ever need to kick someone in the face, I can!</p>
+                </div>
+                <div class="review">
+                    <h4>Mike Lawrence</h4>
+                    <img class="stars" src="images/5stars.png" alt="4 Stars" height=21 width=88 /><br>
+                    <time datetime="2015-09-24">September 24, 2015</time>
+                    <p>Simple jean perfection! They feel great, wear great, and look great. The button fly slow down quick restroom stops, but that’s to be expected. They are true action jeans, authentic and bad ass!</p>
+                </div>
+                <div class="review">
+                    <h4>Jake F. Hamilton</h4>
+                    <img class="stars" src="images/4stars.png" alt="4 Stars" height=21 width=88 /><br>
+                    <time datetime="2015-04-14">April 14, 2015</time>
+                    <p>I really like these jeans. I haven't had a button - up fly for years, so wasn't sure how I would like them at first, but I'm getting used to it again. They are comfortable and fit well. I am 6' and 170 lbs, fairly thin, and the 32 x 32 was just right. I like the color as well.</p>
+                </div>
+
+                <!-- Submit review form -->
+                <h3>Review</h3>
+                <form id="review-form" method="get" action="script/process-review.php">
+                    <input type="hidden" name="form_sent" value="1" />
+                    <fieldset id="your-info">
+                        <legend>Your Info</legend>
+                        <div>
+                            <label for="name">Full Name:</label>
+                            <input type="text" name="name" id="name" required size="25" maxlength="50" placeholder="Type your full name here" /><br>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" />
+                        </div>
+                    </fieldset>
+                    <fieldset id="review-text">
+                        <legend>Your Review</legend>
+                        <div>
+                            <label for="stars">How many stars? (0-5)</label>
+                            <input type="number" id="stars" name="stars" min="0" max="5" required="required"/>
+                        </div>
+                        <div>
+                            <label for="contact-textbox">Give your product review here: </label>
+                            <textarea id="contact-textbox" name="contact-textbox" maxlength="200" placeholder="Type your review here." cols="25" rows="10"></textarea>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>      
+            </div>
+        </main>
+        <footer>
+            <p><img src="images/century-sm.png" alt="Century Athletic Logo" height=63 width=100 /><small><a href="https://www.centurymartialarts.com/" title="Go to the Century Martial Arts Official Site">Century Martial Arts Supply, LLC.</a> All rights reserved. All audio, visual and textual content on this site are protected by trademark rights, copyrights and other rights owned by Century LLC’s licensors, licensees, suppliers and accounts. Use of this site signifies your agreement to the Terms and Conditions of Use.<br>Site created by Vivian Harvey for COMP 1002, Fall 2017.</small></p>
+        </footer>
+    </body>
+</html>
